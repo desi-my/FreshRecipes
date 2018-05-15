@@ -1,0 +1,4109 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>First jQuery Mobile Example</title>
+	<link rel="stylesheet" href="themes/Cooking1.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+    <link rel="stylesheet" href="../jquery.mobile-1.4.5/jquery.mobile.structure-1.4.5.css" />
+    <script src="../jquery-1.11.3.min.js" type="text/javascript"></script>
+    <script src="../jquery.mobile-1.4.5/jquery.mobile-1.4.5.js" type="text/javascript"></script>
+    <meta name="viewport" content="width=device-width"/>
+			
+</head>
+
+<body>
+ <section id="firstpage" data-role="page" data-theme="c">
+ 
+        <header data-role="header" data-position="fixed">		
+
+
+	  
+		    <h2 id="freshRecipes">Fresh Recipes </h2>
+			<div>
+			 <a id="logoHome" href="first_jqmobile_start.html"><img src="images/logoa.png" class="ui-btn-left"/></a>
+             
+</div>		
+        
+ <!--         <h1> <a href="index.html"><img src="images/logo.png" class='ui-icon-left'/></a> 	 </h1>	
+               <a href="first_jqmobile_start.html" id="searchIcon"> <img src="images/search-icon1.png"/></a> -->  
+        </header>		
+		
+		
+		<div class="ui-content" id="firstpageBody">
+		
+             <div data-role="controlgroup" data-type="vertical" data-inset="true"> 	
+                		 
+                  <a href="#secondpage" class="ui-btn ui-mini ui-icon-carat-r ui-btn-icon-right" data-transition="fade">
+				  <img src="../jquery.mobile-1.4.5/images/home/starterHome.png" class="ui-btn-left" /> <span class="navText" >Appetizer</span> </a>
+				  
+                  <a href="#thirddpage"  class="ui-btn ui-mini ui-icon-carat-r ui-btn-icon-right" data-transition="flip">
+				  <img src="../jquery.mobile-1.4.5/images/home/saladHome.png" class="ui-btn-left"/><span class="navText" >Salad</span></a>
+				  
+                  <a href="#forthpage"  class="ui-btn ui-mini ui-icon-carat-r ui-btn-icon-right" data-transition="pop">
+				  <img src="../jquery.mobile-1.4.5/images/home/soupHome.png" class="ui-btn-left"/><span class="navText">Soup</span></a>
+				  
+                  <a href="#fifthpage"  class="ui-btn ui-mini ui-icon-carat-r ui-btn-icon-right" data-transition="slide">
+				  <img src="../jquery.mobile-1.4.5/images/home/lunchHome.png" class="ui-btn-left"/><span class="navText">Lunch</span></a>
+				  
+                  <a href="#sixthpage"  class="ui-btn ui-mini ui-icon-carat-r ui-btn-icon-right" data-transition="slidedown">
+				  <img src="../jquery.mobile-1.4.5/images/home/dinnerHome.png" class="ui-btn-left"/><span class="navText">Dinner</span></a>
+				  
+			      <a href="#seventhpage"  class="ui-btn ui-mini ui-icon-carat-r ui-btn-icon-right" data-transition="slideup">
+				  <img src="../jquery.mobile-1.4.5/images/home/dessertHome.png" class="ui-btn-left"/><span class="navText">Dessert<span></a>			
+            
+			</div>
+						
+
+  <nav data-role="navbar">
+            <ul>
+                <li><a id="chefs" href="#sixteenpage" class="ui-btn ui-icon-user ui-btn-icon-top ui-state-persist">Chefs</a></li>
+                <li><a id="about" href="#eightdpage" class="ui-btn ui-icon-grid ui-btn-icon-top ui-state-persist"  >About Us </a></li>
+                <li><a  id="sendRecipe" href="#ninethpage" class="ui-btn ui-icon-mail ui-btn-icon-top ui-state-persist">Send Recipe</a></li>               
+            </ul>
+          </nav>
+			
+		</div>
+		
+        <footer data-role="footer" class="ui-bar"  >
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+
+    </section>
+	
+	
+	<!-- Second Page Appetizer--------->
+	
+	 <div id="secondpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Appetizer</h1>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="#tenthpage" class="ui-btn ui-btn-inline ui-icon-forward ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Forward</a>
+        </header>
+		
+        <div class="ui-content">
+           <ul data-role="listview" data-inset="true" data-filter="true">
+      <li>
+        <a href="#tenthpage">
+        <img src="../jquery.mobile-1.4.5/images/appetizer/starter1.jpg">
+        <h2>Chive and Onion Deviled Eggs</h2>
+        <p>Cooking Time - 25 minutes</p>
+        </a>
+      </li>
+      <li>
+        <a href="#tenthpage2">
+        <img src="../jquery.mobile-1.4.5/images/appetizer/starter2.jpg">
+        <h2>Black Bean Guacamole</h2>
+        <p>Cooking Time - 35 minutes</p>
+        </a>
+      </li>
+	  
+	  <li>
+        <a href="#tenthpage3">
+        <img src="../jquery.mobile-1.4.5/images/appetizer/starter3.jpg">
+        <h2>Paprika Parsnip Fries</h2>
+        <p>Cooking Time - 35 minutes</p>
+        </a>
+      </li>
+	  
+	  <li>
+        <a href="#tenthpage4">
+        <img src="../jquery.mobile-1.4.5/images/appetizer/starter4.jpg">
+        <h2>Turkey Taco Lettuce Wraps</h2>
+        <p>Cooking Time - 25 minutes</p>
+        </a>
+      </li>
+	  
+	   <li>
+        <a href="#tenthpage5">
+        <img src="../jquery.mobile-1.4.5/images/appetizer/starter5.jpg">
+        <h2>Baked Eggs with Buffalo Chicken Hash</h2>
+        <p>Cooking Time - 45 minutes</p>
+        </a>
+      </li>
+	  
+	   <li>
+        <a href="#tenthpage6">
+        <img src="../jquery.mobile-1.4.5/images/appetizer/starter6.jpg">
+        <h2>Italian-Style Baked Eggs</h2>
+        <p>Cooking Time - 20 minutes.</p>
+        </a>
+      </li>
+	  
+    </ul>
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+	
+	<!-- Third Page - Salads --------->
+	
+	 <div id="thirddpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Salads</h1>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-forward ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Forward</a>
+        </header>
+      <div class="ui-content">
+           <ul data-role="listview" data-inset="true" data-filter="true">
+      <li>
+        <a href="#eleventhpage">
+        <img src="../jquery.mobile-1.4.5/images/salad/salad1.jpg">
+        <h2>Harvest Salad with Creamy Pumpkin Balsamic Vinaigrette</h2>
+        <p>Cooking Time - 10 minutes</p>
+        </a>
+      </li>
+      <li>
+        <a href="#eleventhpage1">
+         <img src="../jquery.mobile-1.4.5/images/salad/salad2.jpg">
+        <h2>Broccoli Salad with Honey Toasted Walnuts</h2>
+        <p>Cooking Time - 35 minutes</p>
+        </a>
+      </li>
+	  
+	  <li>
+        <a href="#eleventhpage2">
+       <img src="../jquery.mobile-1.4.5/images/salad/salad3.jpg">
+        <h2> Waldorf Salad</h2>
+        <p>Cooking Time - 15 minutes</p>
+        </a>
+      </li>
+	  
+	  <li>
+        <a href="#eleventhpage3">
+       <img src="../jquery.mobile-1.4.5/images/salad/salad4.jpg">
+        <h2>Moroccan Roasted Chickpea Salad Chicken</h2>
+        <p>Cooking Time - 25 minutes</p>
+        </a>
+      </li>
+	  
+	   <li>
+        <a href="#eleventhpage4">
+        <img src="../jquery.mobile-1.4.5/images/salad/salad5.jpg">
+        <h2>Greek Salad with Chicken</h2>
+        <p>Cooking Time - 15 minutes</p>
+        </a>
+      </li>
+	  
+	   <li>
+        <a href="#eleventhpage5">
+        <img src="../jquery.mobile-1.4.5/images/salad/salad6.jpg">
+        <h2>Kale Caesar Quinoa Salad with Roasted Chicken</h2>
+        <p>Cooking Time - 30 minutes.</p>
+        </a>
+      </li>
+	  
+    </ul>
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+	
+		<!-- Forth Page - Soup --------->
+	
+	 <div id="forthpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true" data-filter="true">
+            <h1>Soup</h1>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-forward ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Forward</a>
+        </header>
+      <div class="ui-content">
+           <ul data-role="listview" data-inset="true">
+      <li>
+        <a href="#twelfthpage">
+        <img src="../jquery.mobile-1.4.5/images/soup/soup1.jpg">
+        <h2>Lentil Vegetable Soup Recipe</h2>
+        <p>Cooking Time - 75 minutes</p>
+        </a>
+      </li>
+      <li>
+        <a href="#twelfthpage2">
+         <img src="../jquery.mobile-1.4.5/images/soup/soup2.jpg">
+        <h2>Mediterranean Soup</h2>
+        <p>Cooking Time - 70 minutes</p>
+        </a>
+      </li>
+	  
+	  <li>
+        <a href="#twelfthpage3">
+       <img src="../jquery.mobile-1.4.5/images/soup/soup3.jpg">
+        <h2> Roast Root Vegetable Soup</h2>
+        <p>Cooking Time - 75 minutes</p>
+        </a>
+      </li>
+	  
+	  <li>
+        <a href="#twelfthpage4">
+     <img src="../jquery.mobile-1.4.5/images/soup/soup4.jpg">
+        <h2>Quick Tomato Soup</h2>
+        <p>Cooking Time - 15 minutes</p>
+        </a>
+      </li>
+	  
+	   <li>
+        <a href="#twelfthpage5">
+        <img src="../jquery.mobile-1.4.5/images/soup/soup5.jpg">
+        <h2>Skillet Chicken Soup</h2>
+        <p>Cooking Time - 65 minutes</p>
+        </a>
+      </li>
+	  
+	   <li>
+        <a href="#twelfthpage6">
+        <img src="../jquery.mobile-1.4.5/images/soup/soup6.jpg">
+        <h2>Pumpkin Soup</h2>
+        <p>Cooking Time - 40 minutes.</p>
+        </a>
+      </li>
+	  
+    </ul>
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+	
+	<!-- Fifth Page - Lunch --------->
+	
+	 <div id="fifthpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Lunch</h1>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="#thirtheenpage" class="ui-btn ui-btn-inline ui-icon-forward ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Forward</a>
+        </header>
+      <div class="ui-content">
+           <ul data-role="listview" data-inset="true" data-filter="true">
+      <li>
+        <a href="#thirtheenpage">
+        <img src="../jquery.mobile-1.4.5/images/lunch/lunch1.jpg">
+        <h2>Baked Egg Stuffed Tomatoes</h2>
+        <p>Cooking Time - 30 minutes</p>
+        </a>
+      </li>
+      <li>
+        <a href="#thirtheenpage2">
+           <img src="../jquery.mobile-1.4.5/images/lunch/lunch2.jpg">
+        <h2>Cheese & Zucchini Quesadilla</h2>
+        <p>Cooking Time - 25 minutes</p>
+        </a>
+      </li>
+	  
+	  <li>
+        <a href="#thirtheenpage3">
+         <img src="../jquery.mobile-1.4.5/images/lunch/lunch3.jpg">
+        <h2> Cheesy Veggie Enchiladas</h2>
+        <p>Cooking Time - 45 minutes</p>
+        </a>
+      </li>
+	  
+	  <li>
+        <a href="#thirtheenpage4">
+        <img src="../jquery.mobile-1.4.5/images/lunch/lunch4.jpg">
+        <h2>Beef Flatbread with Yogurt Sauce</h2>
+        <p>Cooking Time - 20 minutes</p>
+        </a>
+      </li>
+	  
+	   <li>
+        <a href="#thirtheenpage5">
+         <img src="../jquery.mobile-1.4.5/images/lunch/lunch5.jpg">
+        <h2>Broccoli & Potato Frittata</h2>
+        <p>Cooking Time - 45 minutes</p>
+        </a>
+      </li>
+	  
+	   <li>
+        <a href="#thirtheenpage6">
+         <img src="../jquery.mobile-1.4.5/images/lunch/lunch6.jpg">
+        <h2>Turkey Taco Lettuce Wraps</h2>
+        <p>Cooking Time - 20 minutes.</p>
+        </a>
+      </li>
+	  
+    </ul>
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+	
+	<!-- Sixth Page - Dinner --------->
+	
+	 <div id="sixthpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dinner</h1>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="#fourteenpage" class="ui-btn ui-btn-inline ui-icon-forward ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Forward</a>
+        </header>
+      <div class="ui-content">
+           <ul data-role="listview" data-inset="true" data-filter="true">
+      <li>
+        <a href="#fourteenpage">
+        <img src="../jquery.mobile-1.4.5/images/dinner/dinner1.jpg">
+        <h2>Lemon Herb Grilled Chicken</h2>
+        <p>Cooking Time - 50 minutes</p>
+        </a>
+      </li>
+      <li>
+        <a href="#fourteenpage2">
+         <img src="../jquery.mobile-1.4.5/images/dinner/dinner2.jpg">
+        <h2>Salmon with Lemon Butter</h2>
+        <p>Cooking Time - 65 minutes</p>
+        </a>
+      </li>
+	  
+	  <li>
+        <a href="#fourteenpage3">
+       <img src="../jquery.mobile-1.4.5/images/dinner/dinner3.jpg">
+        <h2> Honey Lime Chicken</h2>
+        <p>Cooking Time - 85 minutes</p>
+        </a>
+      </li>
+	  
+	  <li>
+        <a href="#fourteenpage4">
+       <img src="../jquery.mobile-1.4.5/images/dinner/dinner4.jpg">
+        <h2>Chicken in balsamic, orange & rosemary sauce</h2>
+        <p>Cooking Time - 25 minutes</p>
+        </a>
+      </li>
+	  
+	   <li>
+        <a href="#fourteenpage5">
+        <img src="../jquery.mobile-1.4.5/images/dinner/dinner5.jpg">
+        <h2>Wild mushroom & port brioche</h2>
+        <p>Cooking Time - 60 minutes</p>
+        </a>
+      </li>
+	  
+	   <li>
+        <a href="#fourteenpage6">
+       <img src="../jquery.mobile-1.4.5/images/dinner/dinner6.jpg">
+        <h2>Haddock in tomato basil sauce</h2>
+        <p>Cooking Time - 50 minutes.</p>
+        </a>
+      </li>
+	  
+    </ul>
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+	
+	
+	<!-- Seventh Page - Dessert --------->
+	
+	 <div id="seventhpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dessert</h1>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="#fifteenpage" class="ui-btn ui-btn-inline ui-icon-forward ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Forward</a>
+        </header>
+      <div class="ui-content">
+           <ul data-role="listview" data-inset="true" data-filter="true">
+      <li>
+        <a href="#fifteenpage">
+        <img src="../jquery.mobile-1.4.5/images/dessert/dessert1.jpg">
+        <h2>Apple flapjack trifle</h2>
+        <p>Cooking Time - 25 minutes</p>
+        </a>
+      </li>
+      <li>
+        <a href="#fifteenpage2">
+         <img src="../jquery.mobile-1.4.5/images/dessert/dessert2.jpg">
+        <h2>Cranberry Pudding</h2>
+        <p>Cooking Time - 195 minutes</p>
+        </a>
+      </li>
+	  
+	  <li>
+        <a href="#fifteenpage3">
+      <img src="../jquery.mobile-1.4.5/images/dessert/dessert3.jpg">
+        <h2> Chocolate Swiss Roll</h2>
+        <p>Cooking Time - 50 minutes</p>
+        </a>
+      </li>
+	  
+	  <li>
+        <a href="#fifteenpage4">
+       <img src="../jquery.mobile-1.4.5/images/dessert/dessert4.jpg">
+        <h2>Chocolate Frozen Yogurt</h2>
+        <p>Cooking Time - 20 minutes</p>
+        </a>
+      </li>
+	  
+	   <li>
+        <a href="#fifteenpage5">
+        <img src="../jquery.mobile-1.4.5/images/dessert/dessert5.jpg">
+        <h2>Chocolate Truffle Cheesecake</h2>
+        <p>Cooking Time - 95 minutes</p>
+        </a>
+      </li>
+	  
+	   <li>
+        <a href="#fifteenpage6">
+       <img src="../jquery.mobile-1.4.5/images/dessert/dessert6.jpg">
+        <h2>Strawberry Granita with Pistachios and Cream</h2>
+        <p>Cooking Time - 40 minutes.</p>
+        </a>
+      </li>
+	  
+    </ul>
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+	
+	
+	
+	
+	<!-- Eight Page --------->
+	
+	 <div id="eightdpage" data-role="page" data-theme="c" data-dialog="true" data-close-btn="right" >
+        <header data-role="header" data-inset="true">
+            <h1>About Us</h1>			
+        </header>
+        <div class="ui-content" id="eightdpageBody">
+            <p style="font-weight:bold;">Who We Are?</p>			
+            <p>FreshRecipes change the way people eat by having a big impact on how people make decisions on what to cook, buy, and eat. Our users can recommend recipes, keep track and search they've cooked and would like to cook, find their next favourite recipe from a friend, send us your favourite recipes and they will be published, follow chefs and cookbook authors for ideas and much more..</p>
+			<p style="font-weight:bold;">Location:</p>	
+			<p>1234 N Northgate Way, Suite #23, Seattle WA, 98105 </p>
+			<p style="font-weight:bold;">Contact Us:</p>
+			<p>phone: (233) 345-234</p>
+			<p>e-mail: info@freshrecipes.com</p>
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+	
+		<!-- Ninth Page --------->
+	
+	 <div id="ninethpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Send Recipes</h1>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-forward ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Forward</a>
+        </header>
+		
+        <div class="ui-content id="ninethpageBody">
+           <form method="get" action="">
+          <legend style="color:#ff4028;">Send us your Favourite Recipes and We will publish all of them!</legend>
+          <fieldset class="ui-field-contain">		   
+            <label for="name">Your Name:</label>
+            <input type="text" name="name" id="name" value="" placeholder="Your Name"/>
+			<label for="email">Your email: </label>
+            <input type="email" name="email" id="email" value="" placeholder="Your Email"/>
+            <label for="nRecipes">Number of recipes:</label>
+            <input type="number" name="nRecipes" id="nRecipes" value="" placeholder="Number of recipes:"/>
+          </fieldset>
+		  
+		   <fieldset class="ui-field-contain">
+		    <label for="select1">What is your Recipe:</label>
+ 			 <select name="select1" id="select2" multiple="multiple" data-native-menu="false">
+            <option>Select Options:</option>
+            <option value="value1">Veggie</option>
+            <option value="value2">Meat</option>
+            <option value="value3">Dessert</option>
+            <option value="value4">Gluten Free</option>
+          </select>
+        </fieldset>
+
+          <div class="ui-field-contain">
+            <label for="details">Describe Your Recipes</label>
+          	<textarea id="details"></textarea>
+          </div>
+		  
+		  <div>
+		  <a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-action ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-shadow">Send Recipes</a>
+		  </div>
+		  
+        </form>
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+	
+
+	
+	<!-- Tenth page - Appetizer 1- Full Description -->
+	<!-- 1 -->
+	 <div id="tenthpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Appetizer</h1>
+			<a href="#secondpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Chive and Onion Deviled Eggs</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/appetizer/bigImage/starter1a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+        <p>Cream cheese  - 1 cup <br>
+		Whole milk - ½ tbsp <br>
+		Egg, whole, raw  - 6 medium <br>
+		Spices, paprika - ⅛ tsp <br>
+		Mustard, prepared, yellow  - 1 tsp <br>
+		Salt - ⅛ tsp <br>
+		Chives, raw - 2 tsp chopped <br>
+		Red Peppers, sweet, raw -  ½ cup, chopped <br>
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation"><li>In 2-quart saucepan, place eggs in single layer; add enough cold water to cover eggs by 1 inch. Cover saucepan; heat to boiling.
+		Remove from heat; let stand covered 15 minutes. Drain. </li>
+		<li>Immediately place eggs in cold water with ice cubes or run cold water over eggs until completely cooled. </li>
+		<li>Peel eggs; cut in half lengthwise. Carefully remove yolks; place in a small bowl. </li>
+		<li>Add cream cheese spread, salt, milk and mustard yellow; mash with fork until well blended and smooth. </li>
+		<li>Spoon or pipe yolk mixture into egg whites. Sprinkle with paprika, finely chopped red peppers and chives. </li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 100.28 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    % Daily*</p>
+		
+		<table style="width:100%">
+  <tr>
+    <td>Total Fat 8.77 g</td>
+    <td></td>		
+    <td>13.5 % </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat 4.43 g</td>
+   	 <td></td>		 
+    <td>22.2 %</td>
+  </tr>
+  <tr>
+    <td>Cholesterol 103.17 mg</td>
+    <td></td>		
+    <td>34.4 % </td>
+  </tr>
+    <tr>
+    <td>Sodium 123.77 mg</td>
+    <td></td>		
+    <td>5.2 % </td>
+  </tr>
+  <tr>
+    <td>Total Carb 1.39 g</td>
+   	 <td></td>		 
+    <td>0.5 %</td>
+  </tr>
+  <tr>
+    <td>Dietary Fiber 0.15 g</td>
+    <td></td>		
+    <td>0.6 % </td>
+  </tr>
+    <tr>
+    <td>Sugars 0.99 g</td>
+   	 <td></td>		 
+    <td>2.5 % </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>8 % </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+	
+
+	<!-- 2 -->
+	 <div id="tenthpage2" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Appetizer</h1>
+			<a href="#secondpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Black Bean Guacamole</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/appetizer/bigImage/starter2a.png" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+        <p>1 can (15 1/2 ounces) black beans, drained and rinsed <br />
+1 1/2 teaspoons coarse salt <br />
+1/2 large white onion, finely chopped <br />
+1 teaspoon minced jalapeno chile <br />
+1 1/2 teaspoons minced chipotle in adobo <br />
+1 small clove garlic, minced <br />
+2 tablespoons plus 1 teaspoon fresh lime juice <br />
+2 ripe avocados, pitted and peeled <br />
+1/4 cup chopped cilantro <br />
+Blue corn tortilla chips, for serving <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Combine beans, salt, onion, jalapeno, chipotle, garlic, and lime juice in a bowl. Mash avocados; stir into bean mixture with cilantro. Serve immediately, with chips. </li>
+
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 100.28 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    % Daily*</p>
+		
+		<table style="width:100%">
+  <tr>
+    <td>Total Fat 8.77 g</td>
+    <td></td>		
+    <td>13.5 % </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat 4.43 g</td>
+   	 <td></td>		 
+    <td>22.2 %</td>
+  </tr>
+  <tr>
+    <td>Cholesterol 103.17 mg</td>
+    <td></td>		
+    <td>34.4 % </td>
+  </tr>
+    <tr>
+    <td>Sodium 123.77 mg</td>
+    <td></td>		
+    <td>5.2 % </td>
+  </tr>
+  <tr>
+    <td>Total Carb 1.39 g</td>
+   	 <td></td>		 
+    <td>0.5 %</td>
+  </tr>
+  <tr>
+    <td>Dietary Fiber 0.15 g</td>
+    <td></td>		
+    <td>0.6 % </td>
+  </tr>
+    <tr>
+    <td>Sugars 0.99 g</td>
+   	 <td></td>		 
+    <td>2.5 % </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>8 % </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+	
+	
+		<!-- 3 -->
+	 <div id="tenthpage3" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Appetizer</h1>
+			<a href="#secondpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Paprika Parsnip Fries</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/appetizer/bigImage/starter3a.png" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+        <p>1 pound parsnips (about 4) <br />
+1 tablespoon extra virgin olive oil <br />
+2 teaspoons paprika <br />
+Salt and black pepper to taste <br />
+Pesto sauce for dipping (optional) <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Preheat the oven to 400 degrees F. </li>
+        <li>Wash and cut the ends off of your parsnips. Cut them into strips to make fries. Place them on a lined baking sheet and drizzle the oil over them. Season with the paprika, salt and pepper and toss to combine. </li>
+		<li>Bake for 20-25 minutes, until soft on the inside and slightly crispy on the outside. </li>
+		<li>Serve with pesto or your favorite dipping sauce. </li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories  237 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    % Daily*</p>
+		
+		<table style="width:100%">
+  <tr>
+    <td>Total Fat 8 g</td>
+    <td></td>		
+    <td>13.5 % </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat 1 g</td>
+   	 <td></td>		 
+    <td>22.2 %</td>
+  </tr>
+  <tr>
+    <td>Cholesterol 0 mg</td>
+    <td></td>		
+    <td>34.4 % </td>
+  </tr>
+    <tr>
+    <td>Sodium 314 mg</td>
+    <td></td>		
+    <td>5.2 % </td>
+  </tr>
+  <tr>
+    <td>Total Carb 1.39 g</td>
+   	 <td></td>		 
+    <td>0.5 %</td>
+  </tr>
+  <tr>
+    <td>Dietary Fiber 13 g</td>
+    <td></td>		
+    <td>0.6 % </td>
+  </tr>
+    <tr>
+    <td>Sugars 11 g</td>
+   	 <td></td>		 
+    <td>2.5 % </td>
+  </tr>
+  <tr>
+    <td>Protein 3 g</td>
+    <td></td>		
+    <td>8 % </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+	
+	
+			<!-- 4 -->
+	 <div id="tenthpage4" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Appetizer</h1>
+			<a href="#secondpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Turkey Taco Lettuce Wrap</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/appetizer/bigImage/starter4a.png" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+        <p>
+		2/3 cup brown basmati rice <br />
+1 1/3 cups water <br />
+2 tablespoons extra-virgin olive oil <br />
+1 pound 93%-lean ground turkey <br />
+1 medium onion, finely chopped <br />
+1 small red bell pepper, finely chopped <br />
+2 tablespoons chili powder, preferably ancho <br />
+1 teaspoon ground cumin <br />
+1/2 teaspoon garlic powder <br />
+1/2 teaspoon salt <br />
+1/4 teaspoon cayenne pepper <br />
+1 cup canned (or cooked) black beans, rinsed <br />
+1/2 cup prepared guacamole <br />
+1/2 cup reduced-fat sour cream <br />
+12 large leaves Boston lettuce <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Bring rice and water to a boil in a small saucepan. Reduce heat to maintain a low simmer, cover and cook until the rice is tender and the water is absorbed, 30 to 40 minutes (see Tip). Remove from heat and let stand, covered, for 10 minutes. Fluff with a fork. </li>
+		<li>Meanwhile, heat oil in a large nonstick skillet over medium heat. Add turkey, onion, pepper, chili powder, cumin, garlic powder, salt and cayenne; cook, stirring, until the turkey is cooked through, 5 to 8 minutes. Add black beans and cook until heated thorough, about 2 minutes. Serve with the cooked rice, guacamole and sour cream in the lettuce leaves. </li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories  492  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    % Daily*</p>
+		
+		<table style="width:100%">
+  <tr>
+    <td>Total Fat 24 g</td>
+    <td></td>		
+    <td>13.5 % </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat 1 g</td>
+   	 <td></td>		 
+    <td>22.2 %</td>
+  </tr>
+  <tr>
+    <td>Cholesterol 77 mg</td>
+    <td></td>		
+    <td>34.4 % </td>
+  </tr>
+    <tr>
+    <td>Sodium 314 mg</td>
+    <td></td>		
+    <td>5.2 % </td>
+  </tr>
+  <tr>
+    <td>Total Carb 1.39 g</td>
+   	 <td></td>		 
+    <td>0.5 %</td>
+  </tr>
+  <tr>
+    <td>Dietary Fiber 9 g</td>
+    <td></td>		
+    <td>0.6 % </td>
+  </tr>
+    <tr>
+    <td>Sugars 5 g</td>
+   	 <td></td>		 
+    <td>2.5 % </td>
+  </tr>
+  <tr>
+    <td>Protein 31 g</td>
+    <td></td>		
+    <td>8 % </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+
+
+			<!-- 5 -->
+	 <div id="tenthpage5" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Appetizer</h1>
+			<a href="#secondpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Baked eggs with buffalo chicken hash</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/appetizer/bigImage/starter5a.png" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+        <p>
+		1 cup baking potato, cubed (large) <br />
+		1 tablespoon olive oil <br />
+		1/2 small onion, chopped <br />
+		2/3 cup red pepper, thinly sliced <br />
+		2 teaspoons garlic, minced <br />
+		2 links chicken sausage, sliced <br />
+		salt and pepper, pinch of each <br />
+		1/2 cup reduced fat shredded cheddar cheese <br />
+		2 eggs <br />
+		<b>For Topping: </b> <br />
+		buffalo wing sauce, drizzle <br />
+		1 green onion, sliced <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Heat your oven to 400°F. </li>
+		<li>Bring a medium pot of water to a boil and cook the cubed potatoes until they are just fork tender, about 3-4 minutes. Drain and set aside. </li>
+		<li>In a large pan, heat the olive oil up on medium heat. Cook the potatoes, onion and red pepper until lightly golden and soft, about 4-5 minutes.</li>
+		<li>Add in the garlic, chicken sausage and salt and pepper. Cook, stirring often, until the sausage is lightly browned. Let sit for 5 minutes to caramelize the bottom. </li>
+		<li>Sprinkle the grated cheese on and stir to mix it into the potato mixture. </li>
+		<li>Make two wells in the hash and crack the eggs into them gently. Cover and place into the oven until the eggs are cooked as much as you like them. I like my yolks runny, which took about 4-5 minutes. </li>
+		<li>Drizzle with buffalo sauce and diced green onion and serve. </li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories  492  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    % Daily*</p>
+		
+		<table style="width:100%">
+  <tr>
+    <td>Total Fat 24 g</td>
+    <td></td>		
+    <td>13.5 % </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat 1 g</td>
+   	 <td></td>		 
+    <td>22.2 %</td>
+  </tr>
+  <tr>
+    <td>Cholesterol 77 mg</td>
+    <td></td>		
+    <td>34.4 % </td>
+  </tr>
+    <tr>
+    <td>Sodium 314 mg</td>
+    <td></td>		
+    <td>5.2 % </td>
+  </tr>
+  <tr>
+    <td>Total Carb 1.39 g</td>
+   	 <td></td>		 
+    <td>0.5 %</td>
+  </tr>
+  <tr>
+    <td>Dietary Fiber 9 g</td>
+    <td></td>		
+    <td>0.6 % </td>
+  </tr>
+    <tr>
+    <td>Sugars 5 g</td>
+   	 <td></td>		 
+    <td>2.5 % </td>
+  </tr>
+  <tr>
+    <td>Protein 31 g</td>
+    <td></td>		
+    <td>8 % </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+
+	
+	
+	<!-- 6 -->
+	 <div id="tenthpage6" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Appetizer</h1>
+			<a href="#secondpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Italian Style Baked Eggs</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/appetizer/bigImage/starter6a.png" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+        <p>
+	    4 cups marinara sauce, warm <br />
+		4 eggs <br />
+		1/4 cup parmigiano reggiano (parmesan), grated  <br />
+		1/4 cup mozzarella, grated  <br />
+		1 handful parsley, chopped  <br />
+		1 small loaf crusty bread such as ciabatta  <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Place half of the marinara sauce into one or more baking dishes, top with the eggs, spoon the remaining sauce around the eggs and sprinkle on the cheese. </li>
+		<li>Bake in a preheated 350F/180C oven until the egg just start to set, about 4-7 minutes and broil then until the cheese melts, about a minute.</li>		
+		<li>Serve garnished with parsley and a side of crusty bread. </li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories  492  &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;    % Daily*</p>
+		
+		<table style="width:100%">
+  <tr>
+    <td>Total Fat 24 g</td>
+    <td></td>		
+    <td>13.5 % </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat 1 g</td>
+   	 <td></td>		 
+    <td>22.2 %</td>
+  </tr>
+  <tr>
+    <td>Cholesterol 77 mg</td>
+    <td></td>		
+    <td>34.4 % </td>
+  </tr>
+    <tr>
+    <td>Sodium 314 mg</td>
+    <td></td>		
+    <td>5.2 % </td>
+  </tr>
+  <tr>
+    <td>Total Carb 1.39 g</td>
+   	 <td></td>		 
+    <td>0.5 %</td>
+  </tr>
+  <tr>
+    <td>Dietary Fiber 9 g</td>
+    <td></td>		
+    <td>0.6 % </td>
+  </tr>
+    <tr>
+    <td>Sugars 5 g</td>
+   	 <td></td>		 
+    <td>2.5 % </td>
+  </tr>
+  <tr>
+    <td>Protein 31 g</td>
+    <td></td>		
+    <td>8 % </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>
+
+	
+<!-- Eleventh page - Salads  2 - Full Description -->
+	
+	<!-- 1 -->
+	 <div id="eleventhpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Salad</h1>
+			<a href="#thirddpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Harvest Salad with Creamy Pumpkin Balsamic Vinaigrette</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/salad/bigImage/salad1a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>Greens - 1 cup <br />
+			Romaine Lettuce - 1 cup <br />
+			Red Onion, diced - 2 tsp<br />
+			Pecan halves - 8<br />
+			Gala Apple, cored and thinly diced - 1/4 cup<br />
+			Dried tart Cherries - 2 tsp<br />
+			Diced English Cucumber - 1/4 cup<br />
+			Gorgonzola Cheese, crumbled - 2 tsp<br />
+		</p>
+        <p> <h4>Dressing</h4>
+		    Extra Virgin Olive Oil -  1/2 cup<br />
+			Thick Balsamic Vinegar - 1/4 cup  <br />
+			Plain 1% Kefir - 1/4 cup <br />
+			Water - 1/4 cup  <br />
+			Agave Nectar - 1 tsp<br />
+			Pumpkin Pie Spice - 1/4 tsp <br />
+			Optional: Salt and freshly Ground Pepper to taste <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation"><li>In mason jar place all ingredients for dressing. Top mason jar with lid and shake until combined. </li>
+		<li>Layer salad individually in two separate bowls. Top each with equal,  1/2 cup servings of each ingredient. </li>
+		<li>Serve with approximately 2 tablespoons pumpkin dressing! </li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 272 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  g/mg</p>
+		
+		<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>21g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>4g</td>
+  </tr>
+  <tr>
+    <td>Monounsaturated Fat</td>
+    <td></td>		
+    <td>13g </td>
+  </tr>
+    <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>7mg</td>
+  </tr>
+  <tr>
+    <td>Sodium</td>
+   	 <td></td>		 
+    <td>143mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+    <td></td>		
+    <td>18g </td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>3g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>3g </td>
+  </tr>
+    </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>12g </td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>5g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	
+	<!-- 2 -->
+	 <div id="eleventhpage1" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Salad</h1>
+			<a href="#thirddpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Broccoli Salad with Honey Toasted Walnuts </h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/salad/bigImage/salad2a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+		 2 crowns Broccoli, chopped into florets (7 cups) <br />
+		1/4 Red Onion, thinly sliced <br />
+		4 1/2 ounces Fresh Blueberries <br />
+		1/2 cup Dried Cranberries <br />
+		2/3 cup plain Whole Milk Yogurt <br />
+		Zest of 1 Lemon <br />
+		2 tablespoons Fresh Lemon Juice <br />
+		2 tablespoons Honey <br />
+		1 teaspoon Kosher Salt <br />
+
+		</p>
+        <p> <h4>Honey Toasted Walnuts </h4>
+		2/3 cup Raw Walnut Halves <br />
+		2 teaspoons Olive Oil <br />
+		1 1/2 tablespoons Honey <br />
+		1/2 teaspoon Kosher Salt <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Chop the broccoli crowns into small florets, and chop the broccoli stems. Add stems and florets to a large serving bowl.</li>
+		<li>In a small bowl, stir together the yogurt, lemon zest and juice, honey, and salt. Pour this mixture over the broccoli and stir well to coat all of the broccoli with dressing.</li>
+		<li>Add the red onion, blueberries, dried cranberries, and walnuts, if desired. Toss everything together and serve with your favorite entree. </li>
+
+		<h4> Honey Toasted Walnuts: </h4>
+		<li>Add all ingredients for the walnuts to a small skillet and heat over medium.</li>
+		<li>Cook 5 to 8 minutes until mixture is very bubbly and walnuts have caramelized and turned golden-brown.</li>
+		<li>Set aside and allow to cool. Chop the walnuts when cool enough to handle.</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 119 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  g/mg</p>
+		
+		<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>10g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>1g</td>
+  </tr>
+  <tr>
+    <td>Monounsaturated Fat</td>
+    <td></td>		
+    <td>13g </td>
+  </tr>
+    <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>0mg</td>
+  </tr>
+  <tr>
+    <td>Sodium</td>
+   	 <td></td>		 
+    <td>147mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+    <td></td>		
+    <td>6g </td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>1g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>2g </td>
+  </tr>
+    </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>2g </td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>5g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	
+		<!-- 3 -->
+	 <div id="eleventhpage2" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Salad</h1>
+			<a href="#thirddpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Waldorf Salad </h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/salad/bigImage/salad3a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+		3/4 cup mayonnaise or salad dressing <br />
+		1 tablespoon plus 2 teaspoons lemon juice <br />
+		1 tablespoon plus 2 teaspoons milk <br />
+		3 medium unpeeled red eating apples, coarsely chopped (3 cups)  <br />
+		3 medium celery stalks, chopped (1 1/2 cups)  <br />
+		1/2 cup coarsely chopped nuts <br />
+		Salad greens, if desired <br />
+		</p>
+
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Mix mayonnaise, lemon juice and milk in medium bowl.</li>
+		<li> Stir in apples, celery and nuts. Serve on salad greens. Cover and refrigerate any remaining salad.</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 119 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  g/mg</p>
+		
+		<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>10g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>1g</td>
+  </tr>
+  <tr>
+    <td>Monounsaturated Fat</td>
+    <td></td>		
+    <td>13g </td>
+  </tr>
+    <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>0mg</td>
+  </tr>
+  <tr>
+    <td>Sodium</td>
+   	 <td></td>		 
+    <td>147mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+    <td></td>		
+    <td>6g </td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>1g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>2g </td>
+  </tr>
+    </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>2g </td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>5g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	
+	<!-- 4 -->
+	 <div id="eleventhpage3" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Salad</h1>
+			<a href="#thirddpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Moroccan Roasted Chickpea Salad Chicken</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/salad/bigImage/salad4a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+		5 cups Spinach leaves <br />
+		1 large Sweet Potato, cubed  <br />
+		1/2 cup chopped Almonds  <br />
+		1/3 cup dried cranberries  <br />
+		5 oz goat cheese, crumbled  <br />
+		</p>
+		 <h4>For the chickpea and marinade:</h4>
+		 2 tablespoons Soy Sauce  <br />
+		2 teaspoons Honey <br />
+		2 teaspoons Cinnamon <br />
+		2 teaspoons Paprika <br />
+		2 teaspoons Cumin <br />
+		2 tablespoons Extra Virgin Olive Oil <br />
+		1/2 Lemon, juiced <br />
+		Pinch of black pepper <br />
+		3 cups cooked Chickpeas <br />
+		
+			 <h4>For the lemon vinaigrette:</h4>
+			1/2 Lemon, juiced <br />
+		3 tablespoons Red Wine Vinegar <br />
+		1 tablespoon Olive Oil <br />
+		Pinch of salt and black pepper <br />
+
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Preheat the oven to 400F degrees. Line two baking sheets with parchment or foil.</li>
+		<li> In a large bowl, combine all of the ingredients for the marinade and whisk until combined. Add the chickpeas to the bowl and toss to combine. Pour the chickpeas onto a baking sheet and let sit for about 10 minutes.</li>
+		<li>Meanwhile, place the cubed sweet potato on a baking sheet and drizzle with about 1 tbsp of olive oil and season with salt and black pepper. Toss to coat.</li>
+		<li>Place both baking sheets in the oven and roast for about 30 minutes until the chickpeas are slightly brown and crispy and the potato is slightly brown and cooked through.</li>
+		<li>To assemble the salad, place the spinach onto a large serving plate or bowl, layer on the potatoes and chickpeas, then sprinkle the almonds, cranberries and goat cheese over the top.</li>
+		<li>In a small bowl, whisk together the vinaigrette ingredients and pour over the salad. Serve and enjoy!</li>
+		
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 252 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  g/mg</p>
+		
+		<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>12g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>1g</td>
+  </tr>
+  <tr>
+    <td>Monounsaturated Fat</td>
+    <td></td>		
+    <td>13g </td>
+  </tr>
+    <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>7mg</td>
+  </tr>
+  <tr>
+    <td>Sodium</td>
+   	 <td></td>		 
+    <td>283mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+    <td></td>		
+    <td>6g </td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>7g </td>
+  </tr>
+  <tr>
+    <td>Protein 9 g</td>
+    <td></td>		
+    <td>2g </td>
+  </tr>
+    </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>2g </td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>10g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	
+		<!-- 5 -->
+	 <div id="eleventhpage4" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Salad</h1>
+			<a href="#thirddpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Greek Salad with Chicken</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/salad/bigImage/salad5a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+	3 tablespoons extra-virgin olive oil <br />
+	2 tablespoons fresh lemon juice <br />
+	1 teaspoon honey <br />
+	3/4 teaspoon kosher salt, divided  <br />
+	1/4 teaspoon ground black pepper, divided <br />
+	Olive oil cooking spray <br />
+	12 ounces skinless, boneless chicken breast <br />
+	1 1/2 pounds plum tomatoes, halved, seeded, and quartered <br />
+	1/2 large seedless cucumber, halved lengthwise and thinly sliced <br />
+	1/2 small red onion, thinly sliced <br />
+	3 ounces feta cheese, crumbled <br />
+	1/3 cup pitted kalamata olives, halved <br />
+	3 tablespoons chopped fresh mint, divided <br />
+	4 cups torn romaine lettuce <br />
+		</p>		
+	
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Whisk together the olive oil, lemon juice, and honey. Add 1/2 teaspoon salt and 1/8 teaspoon pepper; set aside.</li>
+		<li> Heat a grill pan to high. Lightly coat chicken with olive oil spray, and season with remaining salt and pepper; cook over high heat 2 minutes per side or until just cooked through. Transfer to a cutting board; let stand 5 minutes.</li>	
+		<li>In a serving bowl, toss tomatoes, cucumber, onion, feta, olives, and half the mint with vinaigrette. Slice chicken into 1/2-inch strips, add to salad, and toss gently. Place 1 cup romaine on each of 4 plates, top with chicken mixture and remaining mint.</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 312 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  g/mg</p>
+		
+		<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>12g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>1g</td>
+  </tr>
+  <tr>
+    <td>Monounsaturated Fat</td>
+    <td></td>		
+    <td>13g </td>
+  </tr>
+    <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>7mg</td>
+  </tr>
+  <tr>
+    <td>Sodium</td>
+   	 <td></td>		 
+    <td>283mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+    <td></td>		
+    <td>6g </td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>7g </td>
+  </tr>
+  <tr>
+    <td>Protein 22 g</td>
+    <td></td>		
+    <td>2g </td>
+  </tr>
+    </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>2g </td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>10g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	
+		<!-- 6 -->
+	 <div id="eleventhpage5" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Salad</h1>
+			<a href="#thirddpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Kale Caesar Quinoa Salad with Roasted Chicken</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/salad/bigImage/salad6a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+        2 tablespoons hot water <br />
+		2 tablespoons canola mayonnaise <br />
+		1 1/2 tablespoons olive oil <br />
+		1 tablespoon fresh lemon juice <br />
+		1/2 teaspoon anchovy paste <br />
+		1/4 teaspoon freshly ground black pepper <br />
+		1 garlic clove, grated <br />
+		1.5 ounces shaved Parmesan cheese, divided <br />
+		5 cups thinly sliced stemmed Lacinato kale <br />
+		1 1/2 cups cooked quinoa <br />
+		1 1/2 cups chopped skinless, boneless rotisserie chicken breast <br />
+		2 tablespoons chopped toasted walnuts <br />
+		</p>		
+	
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>1. Combine first 7 ingredients in a bowl, stirring well with a whisk. Stir in 3 tablespoons Parmesan cheese. Add kale, quinoa, and chicken; toss to coat. Top with remaining 3 tablespoons Parmesan cheese and walnuts.</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 344 &nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  g/mg</p>
+		
+		<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>16.3g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>3.3g</td>
+  </tr>
+  <tr>
+    <td>Monounsaturated Fat</td>
+    <td></td>		
+    <td>6.9g </td>
+  </tr>
+    <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>61mg</td>
+  </tr>
+  <tr>
+    <td>Sodium</td>
+   	 <td></td>		 
+    <td>487mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+    <td></td>		
+    <td>6g </td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>7g </td>
+  </tr>
+  <tr>
+    <td>Protein 22 g</td>
+    <td></td>		
+    <td>2g </td>
+  </tr>
+    </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>2g </td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>10g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	
+<!-- Twelfth page - Soups  4 - Full Description -->
+	<!-- 1 -->
+	 <div id="twelfthpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Soup</h1>
+			<a href="#forthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Lentil Vegetable Soup</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/soup/bigImage/soup1a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>Spices, chili powder - ½ tsp <br />
+			Palm kernel oil - 2 tsp <br />
+			Beef broth cubes - 7 cube <br />
+			Carrots, raw - 3 medium <br />
+			Celery, raw - 2 stalk, medium <br />
+			Garlic, raw - 1 tsp <br />
+			Onions raw - 1 large<br />
+			Parsley, raw - 2 tsp<br />
+			Cooked candied sweet potato - 5 piece<br />
+			Stewed tomatoes - 1 ¾ cup<br />
+			Boiled Lentils (without salt) - 1 cup<br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation"><li>Sauté onion and garlic in oil in a soup pot until softened. </li>
+		<li>Add carrots, celery and chili powder and cook 1 to 2 minutes longer, stirring often. </li>
+		<li>Add broth and lentils. </li>
+		<li>Cover and simmer until lentils are tender, about 35 minutes. </li>
+		<li>Add tomatoes and potatoes and cook until potatoes are tender.</li>
+		<li>Sprinkle individual servings with parsley.</li>		
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 290.86 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>9.62g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>5.36g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>7.17mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>1.9mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>46.6g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>7.48g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>3.99g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>6.58g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	
+	<!-- 2 -->
+	 <div id="twelfthpage2" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Soup</h1>
+			<a href="#forthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Mediterranean Soup</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/soup/bigImage/soup2a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+		1 tablespoon olive oil <br />
+		1 onion, diced <br />
+		1 carrot, halved lengthwise and sliced <br />
+		2 stalks celery, sliced <br />
+		3 cloves garlic, minced <br />
+		2 cups chicken or beef broth <br />
+		2 cups water <br />
+		1 can (14 1/2 ounces) diced tomatoes, not drained <br />
+		1 tablespoon fresh basil, chopped <br />
+		1/4 teaspoon oregano <br />
+		salt and pepper to taste <br />
+		1 15 oz. can cannelini or white beans, drained and rinsed <br />
+		1 cup pasta bows (or other small pasta) <br />
+		Parmesan cheese (optional) <br />
+		1 small head escarole (optional) <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation"><li>Sauté onion and garlic in oil in a soup pot until softened. </li>
+		<li>Heat the oil in a heavy saucepan over medium heat. Add the onion, carrot and celery, and sauté until tender, about 5 minutes. Add the garlic, broth, water, tomatoes, basil, oregano, salt, pepper, and beans.</li>
+		<li>Bring to a boil, reduce heat and simmer for 10 minutes. If escarole is being used, wash, tear into 2 inch pieces and add to soup 15 minutes before soup is done, or at the same time as the pasta. </li>
+		<li>Add the pasta bows and cook 10-15 minutes, stirring occasionally until the pasta is cooked and the escarole is tender. </li>
+		<li>Serve sprinkled with Parmesan cheese.</li>		
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 290.86 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>9.62g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>5.36g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>7.17mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>1.9mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>46.6g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>7.48g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>3.99g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>6.58g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	
+		<!-- 3 -->
+	 <div id="twelfthpage3" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Soup</h1>
+			<a href="#forthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Roast Root Vegetable Soup </h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/soup/bigImage/soup3a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+		2 cups diced parnsips, peeled first <br />
+		2 cups diced rudabegas, peeled first <br />
+		2 cups diced turnips <br />
+		3 cups diced carrots <br />
+		3 cups diced sweet potatoes, peeled first <br />
+		4 teaspoons olive oil, divided <br />
+		salt <br />
+		pepper <br />
+		½ yellow onion, diced <br />
+		2 cloves garlic, minced <br />
+		1½ teaspoons fresh thyme leaves <br />
+		1 teaspoon chopped fresh rosemary <br />
+		1 bay leaves <br />
+		8-10 cups vegetable stock <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation"><li>Sauté onion and garlic in oil in a soup pot until softened. </li>
+		<li>Pre-heat oven to 450 degrees Fahrenheit. Divide the root vegetables evenly on two large baking sheets. Drizzle each with 1½ teaspoons olive oil and season each with ½ teaspon salt and ¼ teaspoon pepper. Place both baking sheets in the oven and roast for about 30 minutes minutes flipping once rotating trays halfway through.</li>
+		<li>Heat a large pot over medium heat and add in 1 teaspoon olive oil, yellow onion, garlic, thyme, rosemary, bay leaves, and ½ teaspoon salt and ¼ teaspoon pepper. Cook for about five minutes. Next, add the roasted root vegetables and stir. Then, add the vegetable stock. Bring to a boil, reduce to a simmer and simmer for ten minutes.</li>
+		<li>Turn off the heat and let soup cool. Then, using an immersion blender blend the soup to desired consistency. You can also blend the soup in batches in a blender or food processor. Add the soup back to the pot and heat when ready to serve. </li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 290.86 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>9.62g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>5.36g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>7.17mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>1.9mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>46.6g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>7.48g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>3.99g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>6.58g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	
+	<!-- 4 -->
+	 <div id="twelfthpage4" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Soup</h1>
+			<a href="#forthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Quick Tomato Soup </h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/soup/bigImage/soup4a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+		3 tablespoons olive oil <br />
+		2 tablespoons butter <br />
+		1 large sweet onion, finely chopped <br />
+		2 large cloves garlic, minced <br />
+		2 tablespoons all-purpose flour <br />
+		2 teaspoons dried basil <br />
+		2 teaspoons dried thyme <br />
+		4 cups chicken broth <br />
+		56 ounces canned crushed tomatoes <br />
+		2 teaspoons sugar <br />
+		½ teaspoon kosher salt <br />
+		½ teaspoon ground black pepper <br />
+		optional garnish: chopped fresh basil, chives, or dill <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation"><li>Sauté onion and garlic in oil in a soup pot until softened. </li>
+		<li>In a large nonreactive stock pot or Dutch oven, heat oil and butter over medium-low heat. Add the onion and cook, stirring occasionally, about 6 minutes. Add garlic and continue to cook, stirring for another 2 minutes until soft but not browned. Add flour and stir to coat onion and garlic for about 2 minutes.</li>
+		<li>Add basil and thyme and continue to stir to toast about 2 minutes, until fragrant.</li>
+		<li>Add broth, crushed tomatoes, sugar, salt and pepper. Bring to a simmer and stir to incorporate well. Cover, reduce heat to low and continue to cook for at least 30 minutes. </li>
+		<li>If you’re okay with a thicker soup, skip the next step (pureeing), season to taste and enjoy! </li>
+		<li>If you prefer a smooth/pureed soup, allow soup to cool slightly, and using a blender, or food processor carefully purée the soup in small batches of about 3-4 cups at a time, OR use an immersion blender to completely puree directly in the pot. (If using a blender or food processor be sure to vent/crack the lid to avoid steam building up.) Return pureed soup to the pot.</li>
+		<li>Season to taste with additional salt and pepper if needed. Serve warm. If desired, garnish with chopped fresh basil, chives, dill, sour cream, and/or your favorite crumbled or grated cheese. </li>
+
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 290.86 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>9.62g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>5.36g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>7.17mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>1.9mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>46.6g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>7.48g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>3.99g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>6.58g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	
+		<!-- 5 -->
+	 <div id="twelfthpage5" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Soup</h1>
+			<a href="#forthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Skillet Chicken Soup </h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/soup/bigImage/soup5a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+	    1 tablespoon vegetable oil</br>
+		1 lb boneless skinless chicken breast halves, cut into bite-size pieces  </br>
+		1 medium onion, chopped (1/2 cup) </br>
+		1 cup baby-cut carrots, cut lengthwise in half  </br>
+		1 cup Green Giant™ frozen broccoli cuts </br>
+		1 cup uncooked egg noodles (2 oz) </br>
+		1 3/4 cups Progresso™ chicken broth </br>
+		1 can (10 3/4 oz) condensed cream of chicken soup </br>
+		Chopped fresh parsley, if desired </br>
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>In 12-inch nonstick skillet, heat oil over medium-high heat. Cook chicken and onion in oil 6 to 8 minutes, stirring frequently, until browned and onion is just tende.</li>
+		<li>Stir in remaining ingredients except parsley. Heat to boiling; reduce heat. Cover and simmer 10 minutes. Uncover and simmer 5 to 8 minutes longer, stirring occasionally, until noodles are tender. Sprinkle with parsley.</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 290.86 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>9.62g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>5.36g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>7.17mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>1.9mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>46.6g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>7.48g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>3.99g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>6.58g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	
+	<!-- 6 -->
+	 <div id="twelfthpage6" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Soup</h1>
+			<a href="#forthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Pumpkin Soup </h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/soup/bigImage/soup6a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+	2 medium onions, finely chopped (2 cups) <br />
+	2 tablespoons unsalted butter <br />
+	2 large garlic cloves, minced <br />
+	1 1/2 tablespoons minced peeled fresh ginger <br />
+	2 teaspoons ground cumin <br />
+	1 teaspoon ground coriander <br />
+	1/8 teaspoon ground cardamom <br />
+	1 1/2 teaspoons salt <br />
+	3/4 teaspoon dried hot red pepper flakes <br />
+	2 (15-oz) cans solid-pack pumpkin <br />
+	4 cups water <br />
+	1 1/2 cups reduced-sodium chicken broth (12 fl oz) <br />
+	1 (14-oz) can unsweetened coconut milk (not low-fat) <br />
+	1/4 cup olive oil <br />
+	2 teaspoons brown mustard seeds <br />
+	8 fresh curry leaves <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Cook onions in butter in a wide 6-quart heavy pot over moderately low heat, stirring occasionally, until softened, 3 to 5 minutes. Add garlic and ginger and cook, stirring, 1 minute. Add cumin, coriander, and cardamom and cook, stirring, 1 minute. Stir in salt, red pepper flakes, pumpkin, water, broth, and coconut milk and simmer, uncovered, stirring occasionally, 30 minutes. Purée soup in batches in a blender until smooth (use caution when blending hot liquids), transferring to a large bowl, and return soup to pot. Keep soup warm over low heat.</li>
+		<li>Heat oil in a small heavy skillet over moderately high heat until hot but not smoking, then cook mustard seeds until they begin to pop, about 15 seconds. Add curry leaves and cook 5 seconds, then pour mixture into pumpkin soup. Stir until combined well and season soup with salt. Soup can be thinned with additional water.</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 290.86 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>9.62g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>5.36g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>7.17mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>1.9mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>46.6g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>7.48g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>3.99g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>6.58g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+<!-- Thirtheen page - Lunch  4 - Full Description -->
+	<!-- 1 -->
+	 <div id="thirtheenpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Lunch</h1>
+			<a href="#fifthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Baked Egg Stuffed Tomatoes</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/lunch/bigImage/lunch1a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p> Large eggs - 8 <br />
+			Tomatoes - 8 medium <br />
+			Fresh basil, minced - 2 tsp<br />
+			Salt, to taste<br />
+			Black pepper, to taste<br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation"><li>Preheat oven to 450°F. </li>
+		<li>Cutting at an angle, core the tomatoes. Use a spoon or melon baller to remove tomato flesh from the inside, taking care to not cut into the sides of the tomatoes. If your tomatoes do not sit flat on their own, slice a very small piece off the bottom so they do not roll. </li>
+		<li>Crack one egg into each tomato cavity. Top with basil and sprinkle with salt and pepper. </li>
+		<li>Bake for 20 minutes, until eggs are set. Let cool slightly and use a large spatula to serve. </li>	
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 178 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>10g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>3g</td>
+  </tr>
+  <tr>
+  <tr>
+    <td>Monounsaturated Fat</td>
+   	 <td></td>		 
+    <td>4g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>372mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>499mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>10g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>2g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>6g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>14g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	
+	<!-- 2 -->
+	 <div id="thirtheenpage2" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Lunch</h1>
+			<a href="#fifthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Cheese and Zucchini Quesadilla</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/lunch/bigImage/lunch2a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p> 
+		4 tablespoons olive oil <br/>
+		1 onion, coarsely chopped <br/>
+		Salt <br/>
+		4 cloves garlic, minced <br/>
+		2 medium zucchini (about 1 pound), halved lengthwise and thinly sliced crosswise <br/>
+		1 cup frozen corn kernels (4 ounces) <br/>
+		1/4 cup chopped fresh cilantro (optional) <br/>
+		4 (8-inch) flour tortillas <br/>
+		2 cups grated pepper jack cheese <br/>
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Preheat oven to 400 degrees. In a large skillet, heat 3 tablespoons oil over medium heat. Add onion and 1 teaspoon salt; cook, stirring occasionally, until onion is soft, about 5 minutes. Stir in garlic; cook 1 minute more. </li>
+		<li>Add zucchini and frozen corn kernels; cook, stirring occasionally, until zucchini is soft and corn is tender, about 6 minutes. Remove from heat; stir in cilantro, if using.</li>
+		<li>Brush one side of all tortillas with remaining tablespoon oil; lay 2 tortillas, oiled side down, on a baking sheet. Place half of the filling on each, and sprinkle with half the cheese. Place remaining 2 tortillas on top, oiled side up; press down gently with a spatula to seal.</li>
+		<li>Bake until cheese has melted and tortillas are golden brown, turning once, about 10 minutes. Remove from oven; let cool slightly. To serve, slice each quesadilla into wedges. </li>	
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 178 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>10g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>3g</td>
+  </tr>
+  <tr>
+  <tr>
+    <td>Monounsaturated Fat</td>
+   	 <td></td>		 
+    <td>4g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>372mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>499mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>10g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>2g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>6g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>14g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	
+	<!-- 3 -->
+	 <div id="thirtheenpage3" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Lunch</h1>
+			<a href="#fifthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Cheesy Veggie Enchiladas</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/lunch/bigImage/lunch3a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p> 
+		1 tablespoon butter <br />
+		1 tablespoon olive oil <br /> 
+		1/2 cup chopped chives <br />
+		3 cloves garlic, minced <br />
+		2 cups spinach, roughly chopped <br />
+		2 cups brown rice, cooked <br />
+		1 cup ricotta cheese <br />
+		1/4 cup Greek yogurt <br />
+		1/2 tablespoon chili powder <br />
+		1/2 tablespoon cumin <br />
+		2 cups shredded cheese, tossed with 1 tablespoon chili flakes <br />
+		3 whole wheat tortillas <br />
+		1 cup salsa <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Preheat the oven to 375° F. </li>
+		<li>Melt butter and olive oil together in a saucepan over medium-low heat. Add garlic and chives and stir until fragrant, but not brown. About 1 minute. Stir in spinach, and cook for about 5 more minutes.</li>
+		<li>Remove from the heat, and mix in the cooked brown rice, ricotta cheese, Greek yogurt and 1-1/4 cup of the shredded cheese. Season with the chili powder and cumin and mix well.</li>
+		<li>Spoon about 1/3 cup of the mixture onto the center of each wrap. Roll up, and place seam side down in a 9×13 glass baking dish.</li>	
+		<li>Pour the salsa over the top, and top with the rest of the shredded cheese. </li>
+		<li>Bake for 15 to 20 minute, until sauce is bubbling, finishing them off with 2-3 minutes under the broiler until cheese is browned.</li>
+		<li>Cut each stuffed tortilla in half and serve.</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 178 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>10g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>3g</td>
+  </tr>
+  <tr>
+  <tr>
+    <td>Monounsaturated Fat</td>
+   	 <td></td>		 
+    <td>4g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>372mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>499mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>10g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>2g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>6g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>14g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	
+	<!-- 4 -->
+	 <div id="thirtheenpage4" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Lunch</h1>
+			<a href="#fifthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Beef Flatbread with Yogurt Sauce</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/lunch/bigImage/lunch4a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p> 
+		1 (6-ounce) container plain 2% reduced-fat Greek yogurt <br />
+		1 tablespoon olive oil <br />
+		3/4 teaspoon black pepper, divided <br />
+		1/4 teaspoon kosher salt, divided <br />
+		4 multigrain flatbreads <br />
+		1 English cucumber <br />
+		12 ounces 90% lean ground beef <br />
+		1 (14.5-ounce) can unsalted Italian-style diced tomatoes <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Preheat broiler to high </li>
+		<li>Combine yogurt, olive oil, 1/4 teaspoon pepper, and 1/8 teaspoon salt.</li>
+		<li>Cut each flatbread in half at the fold. Broil 1 minute or until toasted, turning after 30 seconds.</li>		
+		<li>Cut cucumber in half lengthwise. Place cut side down, and cut into 1/4-inch slices.</li>
+		<li>Heat a nonstick skillet over medium-high heat. Add ground beef to pan, stirring to crumble. Add tomatoes to pan; cook 6 minutes. Stir in remaining 1/2 teaspoon pepper and remaining 1/8 teaspoon salt.</li>
+		<li>Spread 1 tablespoon yogurt mixture on each flatbread half; divide beef mixture evenly among flatbreads. Top evenly with cucumber slices and remaining yogurt mixture.</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 178 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>10g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>3g</td>
+  </tr>
+  <tr>
+  <tr>
+    <td>Monounsaturated Fat</td>
+   	 <td></td>		 
+    <td>4g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>372mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>499mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>10g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>2g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>6g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>14g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	<!-- 5 -->
+	 <div id="thirtheenpage5" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Lunch</h1>
+			<a href="#fifthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Broccoli and Potato Frittata</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/lunch/bigImage/lunch5a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p> 
+		8 to 10 small waxy potatoes (about 1 ounce each), scrubbed and quartered <br />
+		1 cup vegetable or another broth; just use salted water if you don’t have it around <br />
+		1/4 cup olive oil <br />
+		8 ounces (usually 1 bundle) broccolini, trimmed and halved lengthwise or chopped into 1-inch pieces <br />
+		1 small red or white onion, thinly sliced <br />
+		8 large eggs <br />
+		1 cup (about 3 to 3 1/2 ouncesgrated Parmesan cheese <br />
+		Salt and freshly ground black pepper, to taste <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Place the potatoes and broth in a large, ovenproof frying pan, ideally one that is 12 inches. Bring to a boil and simmer for 10 minutes, turning the potatoes often, until almost all of the stock has been absorbed and the potatoes are tender.</li>
+		<li>Add olive oil, broccolini and onion to the potatoes in the frying pan and cook over medium heat for 1 minute, turning frequently, just to get everything coated with oil, Then, reduce the heat to medium-low and cover the pan, cooking for 3 to 4 more minutes, or until the broccolini has become mostly tender.</li>
+		<li>Heat your broiler.</li>		
+		<li>Beat eggs with half the parmesan, salt and pepper, and pour it over the vegetables in the frying pan. Cover and cook over medium (or medium-low, if yours seems to be browning too quickly) until the eggs are mostly, set. Sprinkle remaining parmesan over frittata and run the whole pan under the broiler, until the top is bronzed and the eggs are just set throughout, approximately 5 minutes, but this could vary due to how robust your broiler is (mine is terrible; it took longer).</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 178 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>10g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>3g</td>
+  </tr>
+  <tr>
+  <tr>
+    <td>Monounsaturated Fat</td>
+   	 <td></td>		 
+    <td>4g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>372mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>499mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>10g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>2g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>6g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>14g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	
+		<!-- 6 -->
+	 <div id="thirtheenpage6" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Lunch</h1>
+			<a href="#fifthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Turkey Taco Lettuce Wraps </h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/lunch/bigImage/lunch6a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p> 
+		1.3 lbs 99% lean ground turkey <br />
+		1 tsp garlic powder <br />
+		1 tsp cumin <br />
+		1 tsp salt <br />
+		1 tsp chili powder <br />
+		1 tsp paprika <br />
+		1/2 tsp oregano <br />
+		1/2 small onion, minced <br />
+		2 tbsp bell pepper, minced <br />
+		3/4 cup water <br />
+		4 oz can tomato sauce <br />
+		8 large lettuce leaves from Iceberg lettuce <br />
+		(optional) 1/2 cup shredded reduced fat cheddar - (7 pp) <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Brown turkey in a large skillet breaking it into smaller pieces as it cooks. When no longer pink add dry seasoning and mix well. Add the onion, pepper, water and tomato sauce and cover. Simmer on low for about 20 minutes.</li>
+		<li> Wash and dry the lettuce. Divide the meat equally between the 8 leaves and place in the center of each leaf and top with your favorite taco fixins! With the cheese, 2 wraps are 7 pp (toppings extra).</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 178 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>10g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>3g</td>
+  </tr>
+  <tr>
+  <tr>
+    <td>Monounsaturated Fat</td>
+   	 <td></td>		 
+    <td>4g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>372mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>499mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>10g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>2g </td>
+  </tr>
+  <tr>
+    <td>Protein 4.02 g</td>
+    <td></td>		
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>6g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>14g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	
+<!-- Fourteen page - Dinner  5 - Full Description -->
+<!-- 1 -->
+	
+	 <div id="fourteenpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dinner</h1>
+			<a href="#sixthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Lemon Herb Grilled Chicken</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/dinner/bigImage/dinner1a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p> Spices, garlic powder - 1 tsp <br />
+			Spices, ground black pepper - ¼ tsp<br />
+			Salt - ½ tsp<br />
+			Fresh thyme - 1 tsp<br />
+			Olive oil - ¼ cup<br />
+			Chicken breast, raw -3 unit, 1 lb<br />
+			Lemon juice, raw - 2 lemon yields<br />
+			Lemon peel, raw - 1 tsp<br />
+			Parsley, raw - ¼ cup chopped<br />
+			Shallots, raw - ¼ tsp chopped<br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation"><li>Combine the marinade ingredients. </li>
+		<li>Dip chicken in marinade and place in 3 heavy-duty storage bags with any remaining marinade. </li>
+		<li>Refrigerate 4 hours.(Can be made ahead up to 24 hours). </li>
+		<li>Remove from refrigerator 1 hour before grilling. </li>
+		<li>Prepare grill or preheat broiler and broiler pan.</li>
+		<li>Grill over low heat or broil 4 inches from heat source 14 - 30 minutes, turning and brushing with reserved marinade every 5 minutes.</li>		
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 101.53 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>7.87g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>1.13g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>17.04mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>178.38mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>2.07g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>0.32g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>0.38g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>5.99g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	
+	<!-- 2 -->
+	
+	 <div id="fourteenpage2" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dinner</h1>
+			<a href="#sixthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Salmon with Lemon Butter</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/dinner/bigImage/dinner2a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p> 
+	        2 teaspoons minced garlic <br />
+			1/2 cup butter, cubed <br />
+			6 tablespoons lemon juice <br />
+			2 teaspoons salt <br />
+			1/2 teaspoon pepper <br />
+			1/2 teaspoon hot pepper sauce <br />
+			5 salmon fillets or steaks (6 ounces each) <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>In a small skillet, saute garlic in butter; whisk in lemon juice, salt, pepper and pepper sauce. Transfer 2/3 cup to a serving bowl; set aside. </li>
+		<li>Place salmon in a greased 15x10x1-in. baking pan. Drizzle with remaining lemon butter. Broil 4-6 in. from heat 10-15 minutes or until fish flakes easily with a fork. Serve with reserved lemon butter. Yield: 5 servings. </li>		
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 101.53 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>7.87g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>1.13g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>17.04mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>178.38mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>2.07g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>0.32g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>0.38g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>5.99g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	
+		<!-- 3 -->
+	
+	 <div id="fourteenpage3" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dinner</h1>
+			<a href="#sixthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Honey Lime Chicken</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/dinner/bigImage/dinner3a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p> 
+	        3 tablespoons soy sauce <br />
+			1 tablespoon lime juice <br />
+			1 tablespoon olive oil <br />
+			1 tablespoon honey <br />
+			1 teaspoon fresh garlic, chopped or pressed <br />
+			4 large chicken breasts, whole or sliced <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Add soy sauce, lime juice, olive oil, honey, and garlic to a small bowl in that order (the olive oil will help the honey slide right out of the spoon). Whisk together thoroughly. </li>
+		<li>Place chicken in a large Ziploc bag and pour the marinade in. Marinate in the refrigerator for at least 30 minutes. I prefer to do it for about four hours. </li>
+        <li>After marinating, grill chicken over high heat for about five minutes per side for slices or seven minutes per side for whole breasts, until cooked through.</li>		
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 101.53 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>7.87g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>1.13g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>17.04mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>178.38mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>2.07g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>0.32g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>0.38g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>5.99g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	
+		
+		<!-- 4 -->
+	
+	 <div id="fourteenpage4" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dinner</h1>
+			<a href="#sixthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Chicken in Balsamic, Orange & Rosemary Sauce</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/dinner/bigImage/dinner4a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p> 
+	        4 boneless skinless chicken breast <br />
+			2 tbsp olive oil <br />
+			3 tbsp balsamic vinegar <br />
+			150ml/¼ pint fresh orange juice <br />
+			150ml/¼ pint chicken stock <br />
+			2 tsp chopped fresh rosemary leaves <br />
+			1 tsp light muscovado sugar <br />
+			knob of butter <br />
+			orange segments and fresh rosemary sprigs to garnish <br />
+			boiled rice and green salad to serve <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Put the chicken between pieces of cling film and flatten slightly by bashing with a pan. Unwrap and sprinkle on both sides with pepper. Heat the oil in a pan over a medium heat, then fry the chicken for 5 minutes, turning halfway through. </li>
+		<li>Pour 2 tbsp vinegar over the chicken, add the orange juice and stock and sprinkle with the rosemary and salt. Bring to the boil, lower the heat and bubble gently for 5 minutes until tender, spooning with the sauce frequently and turning chicken halfway through.</li>
+        <li>Stir in the sugar, butter and rest of the vinegar, then sizzle for a few minutes until reduced and glossy.</li>	
+        <li>Put the chicken in a serving dish, spoon the sauce over and garnish with orange and rosemary. Serve with rice and a crisp green salad.	</li>	
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 101.53 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>7.87g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>1.13g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>17.04mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>178.38mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>2.07g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>0.32g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>0.38g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>5.99g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	
+	<!-- 5 -->
+	
+	 <div id="fourteenpage5" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dinner</h1>
+			<a href="#sixthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Wild Mushroom and Port Brioche</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/dinner/bigImage/dinner5a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p> 
+	    2 tbsp olive oil <br />
+		225g chestnut mushroom, quartered <br />
+		115g shiitake mushroom, halved <br />
+		2 large field mushroom, sliced <br />
+		3 sticks celery, finely chopped <br />
+		1 onion, cut into thin wedges <br />
+		2 garlic clove, crushed <br />
+		300ml red wine <br />
+		1.2l hot vegetable stock <br />
+		2 sprigs fresh thyme <br />
+		150ml port <br />
+		1 tbsp redcurrant jelly <br />
+		6 brioche rolls <br />
+		flatleaf parsley, to garnish <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Heat oven to 190C/fan 170C/gas 5. Heat 1 tbsp oil in a large pan, then fry mushrooms for 4-5 mins, stirring occasionally, until lightly browned. Remove with a slotted spoon, then set aside. Add remaining oil to the pan, then fry the celery, onion and garlic over a low heat, stirring occasionally, for 5-6 mins. Add wine, stock and thyme and bring to the boil. Simmer for 30 mins.</li>
+		<li>Add the port and redcurrant jelly. Bring back to the boil, then boil for 10 mins until reduced by half and thick and syrupy. Season to taste, discard the thyme and stir in the mushrooms. Simmer for 5 mins.</li>
+        <li>Meanwhile, pull the tops off the brioche and reserve, then pick out dough from the centre to leave a thick shell. (Process remaining dough to make breadcrumbs, then freeze for future use.) Place rolls on a baking sheet, then bake for 5-7 mins until hot and crisp.</li>	
+        <li>Spoon the mushroom mixture into the brioche rolls, then garnish with the flat-leaf parsley. Serve immediately with any remaining gravy, potato wedges and green beans.</li>	
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 101.53 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>7.87g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>1.13g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>17.04mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>178.38mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>2.07g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>0.32g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>0.38g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>5.99g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+		<!-- 6 -->
+	
+	 <div id="fourteenpage6" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dinner</h1>
+			<a href="#sixthpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Haddock in Tomato Basil Sauce</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/dinner/bigImage/dinner6a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p> 
+	     1 tbsp olive oil <br />
+		1 onion, thinly sliced <br />
+		1 small aubergine, about 250g/9oz, roughly chopped <br />
+		½ tsp ground paprika <br />
+		2 garlic clove, crushed <br />
+		400g can chopped tomato <br />
+		1 tsp dark or light muscovado sugar <br />
+		8 large basil leaves, plus a few extra for sprinkling <br />
+		4 4x175g/6oz firm skinless white fish fillets, such as haddock <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Heat the olive oil in a large non-stick frying pan and stirfry the onion and aubergine. After about 4 minutes the vegetables will start to turn golden but won’t be soft yet, so cover with a lid and let the vegetables steam-fry in their own juices for 6 minutes – this helps them to soften without needing to add any extra oil.</li>
+		<li>Stir in the paprika, garlic, tomatoes and sugar with 1⁄2 tsp salt and cook for another 8-10 minutes, stirring, until onion and aubergine are tender.</li>
+        <li>Scatter in the basil leaves then nestle the fish in the sauce, cover the pan and cook for 6-8 minutes until the fish flakes when tested with a knife and the flesh is firm but still moist. Tear over the rest of the basil and serve with a salad and crusty bread.</li>	
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 101.53 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;  g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>7.87g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>1.13g</td>
+  </tr>
+  <tr>
+    <td>Cholesterol</td>
+    <td></td>		
+    <td>17.04mg </td>
+  </tr>
+    <tr>
+    <td>Sodium</td>
+    <td></td>		
+    <td>178.38mg</td>
+  </tr>
+  <tr>
+    <td>Carbohydrate</td>
+   	 <td></td>		 
+    <td>2.07g</td>
+  </tr>
+    <tr>
+    <td>Dietary Fiber</td>
+   	 <td></td>		 
+    <td>0.32g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>0.38g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>5.99g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>	
+	
+	
+<!-- Fifteen page - Desserts  6 - Full Description -->
+    <!-- 1 -->
+	
+	 <div id="fifteenpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dessert</h1>
+			<a href="#seventhpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Apple flapjack trifle</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/dessert/bigImage/dessert1a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p> Porridge oats - 100g <br />
+			Mixed spice - 1 tsp <br />
+			Light muscovado sugar - 50g <br />
+			Butter - 50g	<br />		
+		</p>
+		   <h4>For the Filling</h4>
+		<p> Cox's or russet apples - 7-8 units
+			Butter - 25g <br />
+			Golden caster sugar 25g<br />
+			blackcurrant coulis - 2 tsp <br />
+			Carton fresh custard - 500g<br />
+			Carton double cream - 284ml	<br />	
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation"><li>Mix the oats, spice and sugar. Melt the butter in a frying pan, add the oats and fry
+		for about 5 minutes, stirring all the time, until they are lightly toasted and crisp (they become crispier still on cooling). 
+		Tip into a bowl and leave to cool. </li>
+		<li>Peel, core and thickly slice the apples. Melt the butter in the frying pan until it is foaming, add the apples and fry quickly over a fairly high heat, flipping them over when they start to colour. Sprinkle over the sugar and cook for a further 2-3 minutes, until the apples are slightly softened. Leave to cool. </li>
+		<li>Layer half the apples and almost half the oats in a glass serving dish, repeat, setting aside a few oats. Drizzle over the coulis, then spoon over the custard. Whip the cream until stiff, then spoon over the custard. Scatter over the remaining oats. Serve straight away or chill for up to 6 hours. </li>	
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 573 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>38g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>23g</td>
+  </tr>
+    <tr>
+    <td>Carbs</td>
+    <td></td>		
+    <td>54g</td>
+  </tr>
+  <tr>
+    <td>Salt</td>
+   	 <td></td>		 
+    <td>0.3g</td>
+  </tr>
+    <tr>
+    <td>Fibre</td>
+   	 <td></td>		 
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>21g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>6g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	
+	<!-- 2 -->
+	
+	 <div id="fifteenpage2" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dessert</h1>
+			<a href="#seventhpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Cranberry Pudding</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/dessert/bigImage/dessert2a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+		 Flour -- 1 1/2 cups <br />
+		Baking soda -- 1 teaspoon <br />
+		Warm water -- 1/2 cup <br />
+		Molasses -- 1/2 cup <br />
+		Brown sugar -- 1/2 cup <br />
+		Cinnamon -- 1 teaspoon <br />
+		Ground ginger -- 1 teaspoon <br />
+		Nutmeg -- 1 teaspoon <br />
+		Cranberries -- 3 cups <br />
+		Walnuts or pecans -- 1 cup <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Sift the flour and baking soda together in a small bowl. In a separate bowl, beat together the water, molasses, brown sugar and spices. Stir the flour mixture into the liquid ingredients until smooth and then fold in the cranberries and nuts.</li>
+		<li>Pour the batter into a well greased pudding mold, leaving at least 1 inch of headroom for the pudding to rise. Don't forget to grease the lid.</li>
+		<li>Set on a trivet or a folded towel in a pot large enough to hold the mold. Pour boiling water to come 1/2 to 2/3 of the way up the side of the mold. Bring the water to a boil again on the stove, then reduce heat to a healthy simmer, cover the pot tightly and steam the pudding for 1 1/2 to 2 hours, or until a toothpick inserted into the pudding comes out clean. </li>	
+		<li>Allow the pudding to cool for 15-20 minutes, then unmold onto a serving platter and serve with whipped cream, a hard sauce or eggnog sauce (recipe below). </li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 573 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>38g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>23g</td>
+  </tr>
+    <tr>
+    <td>Carbs</td>
+    <td></td>		
+    <td>54g</td>
+  </tr>
+  <tr>
+    <td>Salt</td>
+   	 <td></td>		 
+    <td>0.3g</td>
+  </tr>
+    <tr>
+    <td>Fibre</td>
+   	 <td></td>		 
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>21g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>6g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	
+		<!-- 3 -->
+	
+	 <div id="fifteenpage3" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dessert</h1>
+			<a href="#seventhpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Chocolate Swiss Roll</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/dessert/bigImage/dessert3a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+	    <b>For the marshmallow filling: </b><br />
+		6 tablespoons softened butter <br />
+		1 1/2 cups powdered sugar <br />
+		1 teaspoon vanilla <br />
+		1-7 oz. container marshmallow fluff <br />
+		1 tablespoon milk {if needed} <br />
+		<br />
+		<b>For the dark chocolate frosting/glaze: </b><br />
+		1/4 cup butter <br />
+		1 1/4 cups dark chocolate chips <br />
+		2 tablespoons cocoa powder <br />
+		1/4 cup milk <br />
+		1 1/4 cups powdered sugar <br />
+		1 teaspoon vanilla <br />
+		sprinkles for garnish, if desired <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Prepare cake according to directions listed here. Roll up and cool {like my pictures detail}.</li>
+		<li>For the frosting, stir butter, powdered sugar and vanilla together to start incorporating. Add in the marshmallow fluff and whip it good for 1 minute. Scrape sides and stir again briefly. If you think it's too thick, add in 1 tablespoon milk.</li>
+		<li>Unroll cooled cake, spread frosting evenly across the entire thing, then roll up again gently. Wrap in plastic wrap and refrigerate 2-3 hours until the filling firms up.</li>	
+		<li>Remove plastic wrap and place cake roll onto a cooling rack with foil underneath to catch any drips.</li>
+		<li>For the frosting, melt butter, chocolate chips, cocoa and milk together in a small pot over low heat. Once everything has melted together, remove from heat then stir in powdered sugar and vanilla.</li>
+		<li>Pour warm frosting over cake, using the back of the spoon to spread gently, covering every exposed part of the cake. Top with sprinkles if desired. Refrigerate 20-30 minutes until frosting has firmed up.</li>
+		<li>Pour warm frosting over cake, using the back of the spoon to spread gently, covering every exposed part of the cake. Top with sprinkles if desired. Refrigerate 20-30 minutes until frosting has firmed up.</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 573 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>38g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>23g</td>
+  </tr>
+    <tr>
+    <td>Carbs</td>
+    <td></td>		
+    <td>54g</td>
+  </tr>
+  <tr>
+    <td>Salt</td>
+   	 <td></td>		 
+    <td>0.3g</td>
+  </tr>
+    <tr>
+    <td>Fibre</td>
+   	 <td></td>		 
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>21g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>6g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	
+			<!-- 4 -->
+	
+	 <div id="fifteenpage4" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dessert</h1>
+			<a href="#seventhpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Chocolate Frozen Yogurt</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/dessert/bigImage/dessert4a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+        2 cups plain yogurt - don't use lighter versions <br />
+		1/2 cup almond milk, or sub another milk <br />
+		1/2 cup Nesquik chocolate powder <br />
+		1 teaspoon vanilla extract <br />
+		2 teaspoons truvia, or sub another sweetener <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li>Blend together all of the ingredients.</li>
+		<li>Please note if you are substituting a different sweetener for truvia, you will need to adjust how much you add - truvia is more concentrated than a regular sugar.</li>
+		<li>Freeze the mixture in a prepared ice cream maker according to manufacturer's directions. It took 25 minutes for this to be frozen in my maker.</li>	
+		<li>If desired, transfer the mixture to an airtight container and into the freezer to further harden. Otherwise, enjoy straight out of the ice cream maker.</li>
+		<li>Freeze any leftovers.</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 573 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>38g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>23g</td>
+  </tr>
+    <tr>
+    <td>Carbs</td>
+    <td></td>		
+    <td>54g</td>
+  </tr>
+  <tr>
+    <td>Salt</td>
+   	 <td></td>		 
+    <td>0.3g</td>
+  </tr>
+    <tr>
+    <td>Fibre</td>
+   	 <td></td>		 
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>21g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>6g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	
+	<!-- 5 -->
+	
+	 <div id="fifteenpage5" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dessert</h1>
+			<a href="#seventhpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Chocolate Truffle Cheesecake</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/dessert/bigImage/dessert5a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+        1 1/2 cups crushed dark chocolate-and-almond shortbread cookies (about 18 cookies; we tested with Keebler Dark Chocolate and Almond Shortbread Sandies)
+		2 tablespoons melted butter <br />
+		2 (4-oz.) semisweet chocolate baking bars, chopped <br />
+		1 cup whipping cream <br />
+		4 (8-oz.) packages cream cheese, softened <br />
+		1 (14-oz.) can sweetened condensed milk <br />
+		2 teaspoons vanilla extract <br />
+		4 large eggs <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li> Preheat oven to 300°. Combine crushed cookies and butter. Press mixture on bottom of a 9-inch springform pan.</li>
+		<li> Microwave chocolate and cream at HIGH 1 1/2 minutes or until melted, stirring at 30-second intervals.</li>
+		<li>Beat cream cheese at medium speed with a heavy-duty electric stand mixer 2 minutes or until smooth. Add sweetened condensed milk and vanilla, beating just until combined. Add eggs, 1 at a time, beating at low speed just until blended after each addition. Add chocolate mixture, beating just until blended. Pour batter into prepared crust.</li>	
+		<li>Bake at 300° for 1 hour and 5 minutes or just until center is set. Turn oven off. Let cheesecake stand in oven with door closed 30 minutes. Remove cheesecake from oven; gently run a knife around outer edge of cheesecake to loosen from sides of pan. Cool completely in pan on a wire rack (about 1 hour). Cover and chill 8 to 24 hours.</li>
+		<li>Remove sides of pan, and place cheesecake on a serving plate. Slowly pour warm Ganache Topping over cheesecake, spreading to edges. Chill 1 hour before serving. Garnish, if desired.</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 573 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>38g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>23g</td>
+  </tr>
+    <tr>
+    <td>Carbs</td>
+    <td></td>		
+    <td>54g</td>
+  </tr>
+  <tr>
+    <td>Salt</td>
+   	 <td></td>		 
+    <td>0.3g</td>
+  </tr>
+    <tr>
+    <td>Fibre</td>
+   	 <td></td>		 
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>21g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>6g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	
+	<!-- 6 -->
+	
+	 <div id="fifteenpage6" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Dessert</h1>
+			<a href="#seventhpage" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-home ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>
+        </header>
+        <div class="ui-content">
+            <h3>Strawberry Granita with Pistachios and Cream</h3>
+            <p> <img src="../jquery.mobile-1.4.5/images/dessert/bigImage/dessert6a.jpg" /></p>
+			
+	<div data-role="collapsibleset">
+      <div data-role="collapsible">
+        <h3>Ingredients</h3>
+		<p>
+        1 lb fresh strawberries <br />
+		1 cup water <br />
+		¼ cup sugar <br />
+		4 tablespoons coconut milk <br />
+		⅓ cup pistachios <br />
+		</p>
+      </div>
+      <div data-role="collapsible">
+        <h3>Preparation method</h3>
+        <ol class="preparation">
+		<li> Heat water over medium heat in a small saucepan. Stir in sugar and cook until sugar dissolves. Remove from heat and set aside.</li>
+		<li> Wash strawberries, remove the green tops, and cut in halves. Place in blender.</li>
+		<li>Pour sugar water over berries in the blender and puree until smooth.</li>	
+		<li>Pour berry mixture into a 9"x13" baking dish and place in the freezer.</li>
+		<li>Every 20-30 minutes, run a fork through the berry mixture to break apart large frozen pieces. Repeat the process until berry mixture resembles a snow cone texture; about 2 hours.</li>
+		<li>Divide puree into containers, top with coconut cream, and pistachios.</li>
+		</ol>
+      </div>
+      <div data-role="collapsible">
+        <h3>Nutrition Facts</h3>
+        <p style="text-align:center; font-weight:bold; color:#ff4028">Amount per Serving</p>
+		<p  style="font-weight:bold;">Calories 573 &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp; g/mg</p>		
+<table style="width:100%">		
+  <tr>
+    <td>Total Fat</td>
+    <td></td>		
+    <td>38g </td>
+  </tr>
+  <tr>
+    <td>Saturated Fat</td>
+   	 <td></td>		 
+    <td>23g</td>
+  </tr>
+    <tr>
+    <td>Carbs</td>
+    <td></td>		
+    <td>54g</td>
+  </tr>
+  <tr>
+    <td>Salt</td>
+   	 <td></td>		 
+    <td>0.3g</td>
+  </tr>
+    <tr>
+    <td>Fibre</td>
+   	 <td></td>		 
+    <td>3g </td>
+  </tr>
+    <tr>
+    <td>Sugar</td>
+   	 <td></td>		 
+    <td>21g</td>
+  </tr>
+  <tr>
+    <td>Protein </td>
+    <td></td>		
+    <td>6g </td>
+  </tr>
+</table>	
+      </div>
+    </div>
+
+        </div>
+		
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+    </div>		
+	
+	<!-- Sixteen Page - Chefs--------->
+		
+ <div id="sixteenpage" data-role="page" data-theme="c">
+        <header data-role="header" data-inset="true">
+            <h1>Chefs</h1>	
+            <a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-back ui-btn-icon-left ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Back</a>
+			<a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-forward ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-btn-icon-notext">Home</a>			
+        </header>
+        <div class="ui-content" id="">
+            <p style="font-weight:bold;">Ina Garten</p>	
+            <p> <img src="../jquery.mobile-1.4.5/images/chef/inaGarten.jpg" /></p>			
+            <p>In 1978, Ina Garten found herself working in the White House on nuclear energy policy and thinking, "There's got to be more to life than this!" She saw an ad for a small food store for sale in a place she'd never been: the Hamptons at the end of Long Island. She and her husband drove up to investigate and made the owner an offer on the spot. Two months later she found herself the owner of Barefoot Contessa, a 400-sq. ft. specialty food store.
+            </p>
+			<p>In 2006, Ina and her business partner Frank Newbold started a successful line of Barefoot Contessa Pantry products, comprised of baking mixes and sauces developed from recipes in her cookbooks.
+            </p>
+			<p>Ina has been a columnist for Martha Stewart Living magazine, O, the Oprah magazine and House Beautiful magazine.
+            </p>
+			<div>
+		  <a href="first_jqmobile_start.html" class="ui-btn ui-btn-inline ui-icon-arrow-r ui-btn-icon-right ui-corner-all ui-shadow ui-nodisc-icon ui-shadow">Next</a>
+		  </div>
+			
+        </div>
+		
+	
+         <footer data-role="footer" class="ui-bar" data-position="fixed">
+            <h2>&copy; 2015 FreshRecipes.com </h2>
+        </footer>
+</div>	
+	
+
+	
+</body>
+</html>
